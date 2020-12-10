@@ -1,4 +1,20 @@
 {
+  "CF100856919": {
+    "contest_id": 327,
+    "language": "GNU C++14",
+    "path": "codeforces\\327\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Hungry Sequence",
+    "problem_url": "https://codeforces.com/contest/327/problem/B",
+    "submission_id": "CF100856919",
+    "submission_url": "https://codeforces.com/contest/327/submission/100856919",
+    "tags": [
+      "math",
+      "*1200"
+    ],
+    "timestamp": "Dec/10/2020 23:23"
+  },
   "CF100860734": {
     "contest_id": 1334,
     "language": "GNU C++14",
