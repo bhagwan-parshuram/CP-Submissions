@@ -67,11 +67,11 @@ int mpow(int base, int exp);
 void ipgraph(int n, int m);
 void dfs(int u, int par);
 
- int mod = 1'000'000'007;
+const int mod = 1'000'000'007;
 const int MAX = 3e5;
 ll binpow(ll b,ll p){ll ans=1;b%=mod;for(;p;p>>=1){if(p&1)ans=ans*b%mod;b=b*b%mod;}return ans;}
 ll inv(int n){return(binpow(n,mod-2));}
-ll ncr(int n,int m){ll fac[n+1];fac[0]=1;Fo(i,1,n+1)fac[i]=(i*fac[i-1])%mod;return ((fac[n]*inv(fac[m])%mod)*inv(fac[n-m]))%mod;}
+int ncr(int n,int m){ll fac[n+1];fac[0]=1;Fo(i,1,n+1)fac[i]=(i*fac[i-1])%mod;return ((fac[n]*inv(fac[m])%mod)*inv(fac[n-m]))%mod;}
 //=======================
 
 vi g[MAX];
@@ -97,7 +97,7 @@ void solve() {
 		  if(i<=p1)count2++;
 	  }
   }
-  pl(ncr(count1,count2));
+  pi(ncr(count1,count2));
 }
 
 int main() {
