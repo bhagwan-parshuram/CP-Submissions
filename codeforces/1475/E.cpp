@@ -97,7 +97,7 @@ void solve() {
 		  if(i<=p1)count2++;
 	  }
   }
-  pi(ncr(count1,count2));
+  cout<<ncr(count1,count2)<<endl;
 }
 
 int main() {
