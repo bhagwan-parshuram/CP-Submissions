@@ -41,43 +41,6 @@ typedef vector<vl> vvl;
 
 vi g[10000];
 
-void solve() {
-  ll n;
-  cin>>n;
- map<ll,ll> a;
-  for(ll i=0;i<n;i++){
-  	ll x; cin>>x;
-  	a[x]++;
-  }
-  vi v,pf;
-  v.pb(0);
-  for(auto u: a){
-  	v.pb(u.S);
-  }
-  sort(all(v));
-  pf=v;
-  for(ll i=0;i<pf.size();i++){
-   pf[i]+=pf[i-1];
-  }
-  ll ans=1e9;
-
-  n=v.size()-1;
-  for(auto c:v){
-    ll i1,i2;
-    ll curr=0;
-    i1=lower_bound(all(v),c)-v.begin();
-    i2=upper_bound(all(v),c)-v.begin();
-    if(i1>0)curr+=pf[i1-1]-pf[0];
-    if(i2<=n)curr+=pf[n]-pf[i2-1]-((n-i2+1)*c);
-
-
-
-    ans=min(ans,curr);
-
-  }
-  cout<<ans<<endl;
-
-}
 
 int main() {
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
@@ -86,7 +49,33 @@ int main() {
     ll t = 1;
     cin >> t;
     while(t--) {
-      solve();
+     {
+  ll n;
+  cin>>n;
+ map<int,int> a;
+  for(ll i=0;i<n;i++){
+  	int x; cin>>x;
+  	a[x]++;
+  }
+  vi v,pf;
+  for(auto u: a){
+  	v.pb(u.S);
+  }
+  sort(all(v));
+  ll ans=1e9;
+  int m=n;
+  n=v.size();
+  for(auto c: v){
+    ll i1,i2;
+    ll curr=0;
+    i1=lower_bound(all(v),c)-v.begin();
+    curr=(m)-c*(n-i1);
+    ans=min(ans,curr);
+
+  }
+  cout<<ans<<endl;
+
+}
     }
 
     return 0;
