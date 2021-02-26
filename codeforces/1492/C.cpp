@@ -1,63 +1,36 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-
-typedef long long ll;
-typedef long double ld;
-typedef pair<int,int> pii;
-typedef vector<int> vi;
-typedef vector<vi> vvi;
-typedef vector<pii> vpii;
-typedef pair<ll,ll> pll;
-typedef vector<ll> vll;
-typedef vector<vll> vvl;
-typedef vector<pll> vpll; 
- 
-#define endl '\n' 
-#define fast std::ios_base::sync_with_stdio(false);cin.tie(NULL);
 #define pb push_back
-#define mp make_pair
-
-void solve(){
-	int n,m;
-	cin>>n>>m;
-	string s1,s2;
-	cin>>s1>>s2;
-
-	int left[n+1];
-	int right[n+1];
-	int p2=0;
-	int p1=0;
-	while(p2<m){
-      if(s1[p1]==s2[p2]){
-      	left[p2]=p1;
-      	//cout<<"*p1"<<p1;
-      	p2++;
-      }
-      p1++;
-	}
-	p1=n-1;
-	p2=m-1;
-	while(p2>=0){
-		if(s1[p1]==s2[p2]){
-      	right[p2]=p1;
-      	p2--;
-      }
-      p1--;
-	}
-	// for(int i=0;i<26;i++){
-	// 	cout<<left[i]<<" "<<right[i]<<endl;
-	// }
-	int ans=0;
-	for(int i=1;i<m;i++){
-		int curr=right[i]-left[i-1];
-		ans=max(ans,curr);
-	}
-	cout<<ans<<endl;
-}
 
 int main(){
-	fast;
-	int t=1;
-	while(t--)
-	  solve();
+    int n, m;
+    cin >> n >> m;
+    string s, t;
+    cin >> s >> t;
+
+    int p1 = 0;
+    int p2 = 0;
+    int ans = 0;
+    vector<int> l, r;
+    while (p1 < n && p2 < m){
+        if(s[p1]==t[p2]){
+            l.pb(p1);
+            p2++;
+        }
+        p1++;
+    }
+    p1 = n - 1;
+    p2 = m - 1;
+    while(p1>=0 && p2>=0){
+        if(s[p1]==t[p2]){
+            r.pb(p1);
+            p2--;
+        }
+        p1--;
+    }
+    reverse(r.begin(), r.end());
+    for (int i = 1; i < m;i++){
+        ans = max(ans, r[i] - l[i - 1]);
+    }
+        cout << ans << endl;
 }
