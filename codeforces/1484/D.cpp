@@ -1,23 +1,21 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define MAX 100005
-
 //linked list type implementation
-int nxt[MAX];
-int visited[MAX];
-int a[MAX];
 int main(){
     int t;
     cin >> t;
     while(t--){
         int n;
         cin >> n;
-
+        int a[n + 1];
+        int nxt[n + 1];
+        int visited[n + 1];
+        for (int i = 0; i <= n;i++)
+            visited[i] = 0;
         queue<int> q;
         for (int i = 0; i < n;i++){
             cin >> a[i];
             nxt[i] = (i + 1)%n;
-            visited[i] = 0;
         }
         for (int i = 0; i < n;i++){
             if(__gcd(a[i],a[nxt[i]])==1){
