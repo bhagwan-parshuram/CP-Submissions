@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 100005
-#define endl "\n"
+
 //linked list type implementation
 int nxt[MAX];
 int visited[MAX];
