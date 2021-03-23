@@ -98,11 +98,8 @@ int main() {
     int t, k;
     cin >> t >> k;
     dp[0] = 1;
-    for (int i = 0; i <=100000;i++){
-       if(i+k<=100000) dp[i + k] += dp[i];
-        dp[i + 1] += dp[i];
-       if(i+k<=100000) dp[i + k] %= mod;
-        dp[i + 1] %= mod;
+    for (int i = 1; i <=100000;i++){
+        dp[i] = (dp[i - 1] + ((i-k>=0)?dp[i-k]:0))%mod;
     }
     for (int i = 1; i <= 100000;i++){
         dp[i] = (dp[i]+dp[i - 1])%mod;
