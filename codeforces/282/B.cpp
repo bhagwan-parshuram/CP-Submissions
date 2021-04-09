@@ -45,7 +45,6 @@ void solve(){
         for(int j=i;j<n;j++){
             s[j]='A';
         }
-        break;
       }
 	}
 	if(ans){
