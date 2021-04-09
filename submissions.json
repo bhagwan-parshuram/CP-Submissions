@@ -1,4 +1,22 @@
 {
+  "CF112398733": {
+    "contest_id": 166,
+    "language": "GNU C++14",
+    "path": "codeforces\\166\\E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Tetrahedron",
+    "problem_url": "https://codeforces.com/contest/166/problem/E",
+    "submission_id": "CF112398733",
+    "submission_url": "https://codeforces.com/contest/166/submission/112398733",
+    "tags": [
+      "dp",
+      "math",
+      "matrices",
+      "*1500"
+    ],
+    "timestamp": "Apr/09/2021 22:17"
+  },
   "CF112399715": {
     "contest_id": 276,
     "language": "GNU C++14",
