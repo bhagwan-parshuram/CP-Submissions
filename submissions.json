@@ -1,4 +1,21 @@
 {
+  "CF113475537": {
+    "contest_id": 4,
+    "language": "GNU C++14",
+    "path": "codeforces\\4\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Before an Exam",
+    "problem_url": "https://codeforces.com/contest/4/problem/B",
+    "submission_id": "CF113475537",
+    "submission_url": "https://codeforces.com/contest/4/submission/113475537",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "*1200"
+    ],
+    "timestamp": "Apr/19/2021 15:54"
+  },
   "CF113475842": {
     "contest_id": 4,
     "language": "GNU C++14",
