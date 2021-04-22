@@ -1,4 +1,20 @@
 {
+  "CF113878232": {
+    "contest_id": 1516,
+    "language": "GNU C++14",
+    "path": "codeforces\\1516\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Tit for Tat",
+    "problem_url": "https://codeforces.com/contest/1516/problem/A",
+    "submission_id": "CF113878232",
+    "submission_url": "https://codeforces.com/contest/1516/submission/113878232",
+    "tags": [
+      "greedy",
+      "*800"
+    ],
+    "timestamp": "Apr/22/2021 17:11"
+  },
   "CF113891938": {
     "contest_id": 1516,
     "language": "GNU C++14",
