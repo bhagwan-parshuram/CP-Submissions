@@ -1,4 +1,22 @@
 {
+  "CF114340206": {
+    "contest_id": 1517,
+    "language": "GNU C++14",
+    "path": "codeforces\\1517\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Explorer Space",
+    "problem_url": "https://codeforces.com/contest/1517/problem/D",
+    "submission_id": "CF114340206",
+    "submission_url": "https://codeforces.com/contest/1517/submission/114340206",
+    "tags": [
+      "dp",
+      "graphs",
+      "shortest paths",
+      "*1800"
+    ],
+    "timestamp": "Apr/27/2021 13:31"
+  },
   "CF114349470": {
     "contest_id": 510,
     "language": "GNU C++14",
