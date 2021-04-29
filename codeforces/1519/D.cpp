@@ -26,6 +26,7 @@ ll rev(int i,int j){
     if(i>j)return 0;
     if(i==j)return a[i]*b[i];
 
+
     ll &ans=r[i][j];
     if(ans!=-1)return ans;
 	ans=rev(i+1,j-1)+a[i]*b[j]+a[j]*b[i];
@@ -37,10 +38,8 @@ void solve(){
 	for(int j=0;j<n;j++)cin>>b[j];
 	memset(dp,-1,sizeof(dp));
     memset(r,-1,sizeof(r));
-    for(int i=0;i<n;i++)r[i][i]=a[i]*b[i];
-
     for(int i=0;i<n;i++){
-    	for(int j=i+1;j<n;j++){
+    	for(int j=0;j<n;j++){
     		if(r[i][j]==-1){
     			rev(i,j);
     		}
@@ -52,7 +51,7 @@ void solve(){
     }
     ll ans=dp[n-1];
     for(int i=0;i<n;i++){
-    	for(int j=i+1;j<n;j++){
+    	for(int j=i;j<n;j++){
            ll temp=r[i][j];
            if(i)temp+=dp[i-1];
            if(j<n-1)temp+=dp[n-1]-dp[j];
