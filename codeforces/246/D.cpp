@@ -47,18 +47,18 @@ void solve(){
 	for(int i=1;i<=n;i++){
 		if(!visited[i])dfs(i);
 	}
-	int c1=-1;
+	int c=-1;
 	int maxi=-1;
 	for(int i=1;i<=n;i++){
 		if(int(s[color[i]].size())>maxi){
 			maxi=s[color[i]].size();
-			c1=color[i];
+			c=color[i];
 		}
 		else if(int(s[color[i]].size())==maxi){
-			if(c1>color[i])c1=color[i];
+			if(c>color[i])c=color[i];
 		}
 	}
-	cout<<c1<<endl;
+	cout<<c<<endl;
 
 }
 
