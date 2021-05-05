@@ -2,8 +2,6 @@
 using namespace std;
 int inf=1e7;
 #define MAX 300005
-#define fast std::ios_base::sync_with_stdio(false);cin.tie(NULL);
-
 
 struct node{
 	int val;
@@ -96,7 +94,6 @@ void solve(){
 }
 
 int main(){
-    fast;
  int t;
  cin>>t;
  while(t--){
