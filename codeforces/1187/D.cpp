@@ -29,8 +29,8 @@ void update(int i,int l,int r,int pos,int x){
      }
 
      int  mid=(l+r)/2;
-     if(pos<=mid)update(2*i,l,mid,pos,x);
-     else update(2*i+1,mid+1,r,pos,x);
+     update(2*i,l,mid,pos,x);
+     update(2*i+1,mid+1,r,pos,x);
      tree[i]=merge(tree[2*i],tree[2*i+1]);
 }
 
