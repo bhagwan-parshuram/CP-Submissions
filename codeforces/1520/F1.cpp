@@ -46,7 +46,6 @@ void solve(){
 
 	}
 	cout<<"! "<<ans<<endl;
-	fflush(stdout);
 }
 
 int main(){
