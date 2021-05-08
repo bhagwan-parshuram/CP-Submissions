@@ -12,4 +12,5 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1 | [D - Distance in Tree](https://codeforces.com/contest/161/problem/D) | [GNU C++14](./codeforces/161/D.cpp) | `dfs and similar` `dp` `trees` `*1800` | May/11/2021 03:05 | 
+2 | [D - Distance in Tree](https://codeforces.com/contest/161/problem/D) | [GNU C++14](./codeforces/161/D.cpp) | `dfs and similar` `dp` `trees` `*1800` | May/11/2021 03:05 | 
+1 | [D - Vitya and Strange Lesson](https://codeforces.com/contest/842/problem/D) | [GNU C++14](./codeforces/842/D.cpp) | `binary search` `data structures` `*2000` | May/09/2021 02:56 | 
